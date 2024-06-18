@@ -1,0 +1,9 @@
+runtime: python38
+handlers:
+- url: /
+  static_files: www/login.html
+  upload: www/login.html
+
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
