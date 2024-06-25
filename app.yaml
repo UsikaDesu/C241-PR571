@@ -1,8 +1,8 @@
-runtime: python38
+runtime: php83
 handlers:
 - url: /
-  static_files: www/login.html
-  upload: www/login.html
+  static_files: www/index.html
+  upload: www/index.html
 
 - url: /(.*)
   static_files: www/\1
