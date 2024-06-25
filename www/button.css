@@ -1,0 +1,22 @@
+.button.button_1 {
+    display: inline-block;
+    background-color: #C88E00;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding-top: 0%;
+  }
+  
+  .button.button_1 a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .button.button_1:hover {
+    background-color: #00670f;
+  }
+  

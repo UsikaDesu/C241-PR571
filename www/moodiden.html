@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classics</title>
+  <link rel="icon" href="images/1.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+  <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="button.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="webcam.js"></script>
+  <style>
+    #solution {
+      font-size: 16px;
+      margin-top: 20px;
+      text-align: justify;
+      list-style-position: inside;
+      color: antiquewhite;
+    }
+    #solution li {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <div class="super_container">
+    <div class="register">
+      <div class="container-fluid">
+        <div class="row row-eq-height">
+          <div class="col-lg-6 nopadding">
+            <div class="search_section d-flex flex-column align-items-center justify-content-center">
+              <div class="search_content text-center">
+                <h1 class="search_title">Mood Identifying</h1>
+                <div>
+                  <video autoplay playsinline muted id="wc" width="224" height="224"></video>
+                  <div id="prediction" style="font-size: 24px; margin-top: 20px; color: green;"></div>
+                </div>
+                <div>
+                  <button onclick="predict()">Predict Emotion</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 nopadding">
+            <div class="register_section d-flex flex-column align-items-center justify-content-center">
+              <div class="register_content text-center">
+                <h1 class="register_title">Identify the mood and get the solution from <span>Classics</span></h1>
+                <div>
+                  <ul id="solution"></ul>
+                </div>
+                <button class="button button_1 register_button mx-auto trans_200"><a href="main.html">Home</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="loadmodel.js"></script>
+</body>
+</html>
